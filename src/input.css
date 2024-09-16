@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .icon {
+    @apply text-2xl text-black;
+  }
+
+  .bg {
+    @apply bg-black;
+  }
+
+  .text-li {
+    @apply w-full text-sm py-4 hover:bg-gray-300 text-center hover:text-black md:rounded-xl;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-all ease-in-out duration-500 w-60 flex-shrink-0 snap-start overflow-hidden;
+  }
+}
