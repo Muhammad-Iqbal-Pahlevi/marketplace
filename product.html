@@ -16,6 +16,11 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="w-full mx-auto bg p-4">
+      <h1 class="text-center text-white font-semibold tracking-widest">
+        Born To Make Your Style
+      </h1>
+    </div>
     <nav>
       <div
         class="container p-4 mx-auto flex justify-between w-full items-center"
@@ -33,14 +38,14 @@
 
     <!-- menu & Category -->
     <div
-      class="container mx-auto p-4 flex flex-col md:flex-row-reverse justify-between gap-4"
+      class="container mx-auto p-4 flex md:flex-row-reverse justify-between gap-4"
     >
-      <div class="hero w-full flex flex-col gap-4">
+      <div class="hero w-full grid grid-cols-1 md:grid-cols-5 gap-4">
         <div
-          class="relative w-full border rounded-xl flex flex-col overflow-hidden md:mx-auto md:flex-row md:items-center"
+          class="relative w-full h-fit border rounded-xl flex flex-col md:flex-row overflow-hidden md:mx-auto md:items-center md:col-span-4"
         >
           <h1
-            class="uppercase py-4 px-8 md:px-8 font-medium md:bg-black md:text-white"
+            class="uppercase h-full py-4 px-8 md:px-8 font-medium md:bg-black md:text-white"
           >
             Menu
           </h1>
@@ -67,10 +72,10 @@
           </label>
           <nav
             aria-label="Header Navigation"
-            class="peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:max-h-full md:flex-row md:items-start"
+            class="peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:max-h-full md:items-start"
           >
             <ul
-              class="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x w-full bg-black text-white md:bg-white md:text-black md:gap-2"
+              class="flex flex-col md:flex-row divide-y md:divide-y-0 w-full bg-black text-white md:bg-white md:text-black md:gap-2"
             >
               <li class="text-li">
                 <a href="">Home</a>
@@ -87,8 +92,322 @@
             </ul>
           </nav>
         </div>
+        <!-- filters -->
+        <div
+          class="relative w-full h-fit border rounded-xl flex flex-col overflow-hidden md:mx-auto md:items-center md:order-first md:row-span-2"
+        >
+          <h1
+            class="uppercase w-full md:text-center py-4 px-8 font-medium md:bg-black md:text-white"
+          >
+            Filters
+          </h1>
+          <input type="checkbox" class="peer hidden" id="navbar" />
+          <label
+            class="absolute right-4 top-4 cursor-pointer md:hidden"
+            for="navbar"
+          >
+            <span class="sr-only">Toggle Navigation</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </label>
+          <nav
+            aria-label="Header Navigation"
+            class="peer-checked:max-h-full flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:max-h-full md:flex-row md:items-start"
+          >
+            <div class="lg:col-span-1 w-full bg-white p-4 rounded-lg shadow-md">
+              <div class="mb-4">
+                <h3 class="font-semibold mb-2">Outerwear</h3>
+                <ul>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="windbreaker"
+                      class="mr-2"
+                    /><label for="windbreaker">Windbreaker</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="jumper" class="mr-2" /><label
+                      for="jumper"
+                      >Jumper</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="jacket" class="mr-2" /><label
+                      for="jacket"
+                      >Jacket</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="raincoat" class="mr-2" /><label
+                      for="raincoat"
+                      >Raincoat</label
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mb-4">
+                <h3 class="font-semibold mb-2">Season</h3>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="spring" class="mr-2" /><label
+                      for="spring"
+                      >Spring</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="summer" class="mr-2" /><label
+                      for="summer"
+                      >Summer</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="autumn" class="mr-2" /><label
+                      for="autumn"
+                      >Autumn</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="winter" class="mr-2" /><label
+                      for="winter"
+                      >Winter</label
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mb-4">
+                <h3 class="font-semibold mb-2">Price</h3>
+                <input type="range" class="w-full" min="500" max="5000" />
+                <div class="flex justify-between text-sm mt-1">
+                  <span>$500</span>
+                  <span>$5000</span>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
+                <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-md">
+                  Reset
+                </button>
+                <button class="bg-green-500 text-white px-4 py-2 rounded-md">
+                  Apply
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="flex flex-col md:col-span-4">
+          <!-- Product Cards -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 col-span-4 gap-6"
+          >
+            <!-- Product 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <img
+                src="Image/shoes.jpg"
+                alt="Product Image"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-md font-bold">Product Name</h3>
+              <p class="text-gray-500">Category</p>
+              <div class="flex items-center justify-between mt-2">
+                <span class="text-lg font-semibold text-green-600"
+                  >Rp. 3.000</span
+                >
+                <button class="bg-blue-500 text-white px-4 py-1 rounded-md">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <img
+                src="Image/jam.jpg"
+                alt="Product Image"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-md font-bold">Product Name</h3>
+              <p class="text-gray-500">Category</p>
+              <div class="flex items-center justify-between mt-2">
+                <span class="text-lg font-semibold text-green-600"
+                  >Rp. 3.000</span
+                >
+                <button class="bg-blue-500 text-white px-4 py-1 rounded-md">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <img
+                src="Image/t-shirt.jpg"
+                alt="Product Image"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-md font-bold">Product Name</h3>
+              <p class="text-gray-500">Category</p>
+              <div class="flex items-center justify-between mt-2">
+                <span class="text-lg font-semibold text-green-600"
+                  >Rp. 3.000</span
+                >
+                <button class="bg-blue-500 text-white px-4 py-1 rounded-md">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <img
+                src="Image/shoes.jpg"
+                alt="Product Image"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-md font-bold">Product Name</h3>
+              <p class="text-gray-500">Category</p>
+              <div class="flex items-center justify-between mt-2">
+                <span class="text-lg font-semibold text-green-600"
+                  >Rp. 3.000</span
+                >
+                <button class="bg-blue-500 text-white px-4 py-1 rounded-md">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <img
+                src="Image/jam.jpg"
+                alt="Product Image"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-md font-bold">Product Name</h3>
+              <p class="text-gray-500">Category</p>
+              <div class="flex items-center justify-between mt-2">
+                <span class="text-lg font-semibold text-green-600"
+                  >Rp. 3.000</span
+                >
+                <button class="bg-blue-500 text-white px-4 py-1 rounded-md">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+              <img
+                src="Image/t-shirt.jpg"
+                alt="Product Image"
+                class="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 class="text-md font-bold">Product Name</h3>
+              <p class="text-gray-500">Category</p>
+              <div class="flex items-center justify-between mt-2">
+                <span class="text-lg font-semibold text-green-600"
+                  >Rp. 3.000</span
+                >
+                <button class="bg-blue-500 text-white px-4 py-1 rounded-md">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-end mt-8 space-x-2">
+            <button class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">
+              Back
+            </button>
+            <button class="px-4 py-2 bg-black text-white rounded">1</button>
+
+            <p>.......</p>
+            <button class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">
+              Next
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     <!-- menu & Category -->
+
+    <footer>
+      <div
+        class="p-4 md:p-8 mt bg-black text-white mx-auto grid md:grid-cols-4 gap-4"
+      >
+        <div class="address">
+          <h1 class="text-2xl font-bold mb-2">Market</h1>
+          <div class="jalan flex gap-2">
+            <p class="font-light text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              ut. Dolores nisi quos deserunt amet veniam dolore blanditiis
+              temporibus dignissimos?
+            </p>
+          </div>
+        </div>
+        <div class="payment">
+          <h1 class="text-2xl font-bold mb-4">Pembayaran</h1>
+          <div class="atm flex md:flex-col gap-2">
+            <ul class="flex flex-col gap-3 font-light text-sm">
+              <li>
+                <a class="hover:text-gray-500" href=""
+                  >Bank Negara IndonesiaI</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-gray-500" href=""
+                  >Bank Republik Indonesia</a
+                >
+              </li>
+              <li><a class="hover:text-gray-500" href="">Mandiri</a></li>
+              <li><a class="hover:text-gray-500" href="">Dana</a></li>
+              <li><a class="hover:text-gray-500" href="">Go-pay</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="kirim">
+          <h1 class="text-2xl font-bold mb-4">Category</h1>
+          <div class="atm flex md:flex-col gap-2">
+            <ul class="flex flex-col gap-3 font-light text-sm">
+              <li><a class="hover:text-gray-500" href="">Accesoris</a></li>
+              <li><a class="hover:text-gray-500" href="">Fashion</a></li>
+              <li><a class="hover:text-gray-500" href="">Muslim Wear</a></li>
+              <li><a class="hover:text-gray-500" href="">Male</a></li>
+              <li><a class="hover:text-gray-500" href="">Female</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tanya">
+          <h1 class="text-2xl font-bold mb-4">Ask Anything</h1>
+          <input
+            type="text"
+            class="w-full text-black rounded-lg bg-white focus:ring-0 mb-2"
+          />
+          <button
+            class="text-black bg-white text-sm font-light w-full px-4 py-3 text-center rounded-md"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+      <div class="copyright mb-4">
+        <hr class="mb-4" />
+        <p class="text-center text-xs text-gray-400">
+          © Copryright by : Marketplace
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

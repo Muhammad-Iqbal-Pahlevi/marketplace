@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="w-full mx-auto bg p-4">
+      <h1 class="text-center text-white font-semibold tracking-widest">
+        Born To Make Your Style
+      </h1>
+    </div>
+    <div class="container mx-auto p-6">
+      <div
+        class="relative bg-white shadow-md rounded-lg overflow-hidden flex flex-col md:flex-row"
+      >
+        <button
+          class="absolute top-3 right-3 bg-gray-300 rounded-full p-2 focus:outline-none hover:bg-gray-400 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-gray-700"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <div class="md:w-1/2 bg-gray-100 flex justify-center items-center">
+          <img
+            src="Image/shoes.jpg"
+            alt="Product Image"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <div class="md:w-1/2 p-8">
+          <h1 class="text-2xl font-bold mb-">Nike Air Zoom</h1>
+          <span class="mb-2">⭐⭐⭐⭐ (4/5)</span>
+
+          <p class="text-gray-600 mb-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            porro officia sit. Facilis, enim quia.
+          </p>
+
+          <div class="flex items-center mb-4">
+            <span class="text-xl font-semibold">Rp. 3.000.000</span>
+            <span class="line-through text-sm text-gray-400 ml-4"
+              >Rp. 10.000.000</span
+            >
+          </div>
+
+          <div class="mb-4">
+            <h3 class="font-semibold text-gray-700 mb-2">Warna</h3>
+            <div class="flex space-x-4">
+              <span
+                class="w-6 h-6 bg-blue-300 rounded-full cursor-pointer"
+              ></span>
+              <span
+                class="w-6 h-6 bg-gray-300 rounded-full cursor-pointer"
+              ></span>
+              <span
+                class="w-6 h-6 bg-yellow-300 rounded-full cursor-pointer"
+              ></span>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <label for="quantity" class="block font-semibold text-gray-700 mb-2"
+              >Quantity</label
+            >
+            <span
+              class="py-2 px-3 text-center border text-lg font-extrabold border-gray-300 rounded-md cursor-pointer"
+              ><i class="ph ph-minus"></i
+            ></span>
+            <input
+              type="text"
+              id="quantity"
+              name="quantity"
+              value="1"
+              min="1"
+              class="w-10 text-center border border-gray-300 rounded-md"
+            />
+            <span
+              class="py-2 px-3 text-center border text-lg font-extrabold border-gray-300 rounded-md cursor-pointer"
+              ><i class="ph ph-plus"></i
+            ></span>
+          </div>
+
+          <div class="flex gap-2 items-center">
+            <button
+              class="bg-red-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-600 transition"
+            >
+              Buy
+            </button>
+            <button
+              class="bg-red-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-600 transition"
+            >
+              Chart
+            </button>
+            <span class="ml-2 text-green-500 font-semibold">Stock 1000</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="deskripsi bg-white shadow-md rounded-lg overflow-hidden flex flex-col p-4 mt-4"
+      >
+        <h1 class="text-2xl font-bold mb-4">Desciption</h1>
+        <p class="text-gray-600 mb-4 text-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          molestias architecto suscipit nemo nostrum temporibus culpa eligendi
+          libero eos, repudiandae reprehenderit praesentium qui dolore et
+          placeat! Tempora molestias illo repellendus.
+        </p>
+        <p class="text-gray-600 mb-4 text-sm">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+          repellat cumque voluptates eaque adipisci quam harum optio iure soluta
+          mollitia quisquam, odio eum saepe amet nulla ducimus obcaecati ipsum
+          voluptatem dicta perspiciatis et porro voluptate aut non. Minima,
+          architecto reiciendis.
+        </p>
+        <ul class="text-gray-600 text-sm list-decimal">
+          <li>Bahan Awet</li>
+          <li>Nyaman</li>
+          <li>Sport</li>
+          <li>Anti Selip</li>
+        </ul>
+      </div>
+      <section>
+        <div class="container mx-auto mt-4 p-4">
+          <h1 class="text-xl text-center h-fit font-bold">Mungkin Anda Suka</h1>
+          <p class="text-sm font-extralight text-center h-fit mb-2"></p>
+          <hr class="mb-4" />
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="card">
+              <div class="flex justify-end relative">
+                <button
+                  id="dropdownButton"
+                  data-dropdown-toggle="dropdown"
+                  class="inline-block absolute right-2 top-2 text-gray-500 dark:text-gray-400 hover:bg-gray-800 dark:hover:bg-gray-700 rounded-lg text-sm p-1"
+                  type="button"
+                >
+                  <span class="sr-only">Open dropdown</span>
+                  <svg
+                    class="w-5 h-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffffff"
+                    viewBox="0 0 16 3"
+                  >
+                    <path
+                      d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdown"
+                  class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-24 dark:bg-gray-700"
+                >
+                  <ul class="py-2" aria-labelledby="dropdownButton">
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >+ Keranjang</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >Favorit</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="flex flex-col items-center pb-4">
+                <img
+                  class="h-48 w-full object-cover"
+                  src="Image/6.JPG"
+                  alt="Bonnie image"
+                />
+                <h5
+                  class="mb-1 text-xl font-medium text-gray-900 dark:text-white"
+                >
+                  Summer Series
+                </h5>
+                <span class="text-sm text-gray-500 dark:text-gray-400"
+                  >T-Shirt</span
+                >
+                <div class="flex w-full px-4 text-center mt-4 md:mt-6">
+                  <a
+                    href="#"
+                    class="py-2 px-4 text-sm font-medium bg-black text-white w-full rounded-md"
+                    >Buy Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="flex justify-end relative">
+                <button
+                  id="dropdownButton"
+                  data-dropdown-toggle="dropdown"
+                  class="inline-block absolute right-2 top-2 text-gray-500 dark:text-gray-400 hover:bg-gray-800 dark:hover:bg-gray-700 rounded-lg text-sm p-1"
+                  type="button"
+                >
+                  <span class="sr-only">Open dropdown</span>
+                  <svg
+                    class="w-5 h-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffffff"
+                    viewBox="0 0 16 3"
+                  >
+                    <path
+                      d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdown"
+                  class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-24 dark:bg-gray-700"
+                >
+                  <ul class="py-2" aria-labelledby="dropdownButton">
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >+ Keranjang</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >Favorit</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="flex flex-col items-center pb-4">
+                <img
+                  class="h-48 w-full object-cover"
+                  src="Image/6.JPG"
+                  alt="Bonnie image"
+                />
+                <h5
+                  class="mb-1 text-xl font-medium text-gray-900 dark:text-white"
+                >
+                  Summer Series
+                </h5>
+                <span class="text-sm text-gray-500 dark:text-gray-400"
+                  >T-Shirt</span
+                >
+                <div class="flex w-full px-4 text-center mt-4 md:mt-6">
+                  <a
+                    href="#"
+                    class="py-2 px-4 text-sm font-medium bg-black text-white w-full rounded-md"
+                    >Buy Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="flex justify-end relative">
+                <button
+                  id="dropdownButton"
+                  data-dropdown-toggle="dropdown"
+                  class="inline-block absolute right-2 top-2 text-gray-500 dark:text-gray-400 hover:bg-gray-800 dark:hover:bg-gray-700 rounded-lg text-sm p-1"
+                  type="button"
+                >
+                  <span class="sr-only">Open dropdown</span>
+                  <svg
+                    class="w-5 h-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffffff"
+                    viewBox="0 0 16 3"
+                  >
+                    <path
+                      d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdown"
+                  class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-24 dark:bg-gray-700"
+                >
+                  <ul class="py-2" aria-labelledby="dropdownButton">
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >+ Keranjang</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >Favorit</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="flex flex-col items-center pb-4">
+                <img
+                  class="h-48 w-full object-cover"
+                  src="Image/6.JPG"
+                  alt="Bonnie image"
+                />
+                <h5
+                  class="mb-1 text-xl font-medium text-gray-900 dark:text-white"
+                >
+                  Summer Series
+                </h5>
+                <span class="text-sm text-gray-500 dark:text-gray-400"
+                  >T-Shirt</span
+                >
+                <div class="flex w-full px-4 text-center mt-4 md:mt-6">
+                  <a
+                    href="#"
+                    class="py-2 px-4 text-sm font-medium bg-black text-white w-full rounded-md"
+                    >Buy Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="flex justify-end relative">
+                <button
+                  id="dropdownButton"
+                  data-dropdown-toggle="dropdown"
+                  class="inline-block absolute right-2 top-2 text-gray-500 dark:text-gray-400 hover:bg-gray-800 dark:hover:bg-gray-700 rounded-lg text-sm p-1"
+                  type="button"
+                >
+                  <span class="sr-only">Open dropdown</span>
+                  <svg
+                    class="w-5 h-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffffff"
+                    viewBox="0 0 16 3"
+                  >
+                    <path
+                      d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdown"
+                  class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-24 dark:bg-gray-700"
+                >
+                  <ul class="py-2" aria-labelledby="dropdownButton">
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >+ Keranjang</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                        >Favorit</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="flex flex-col items-center pb-4">
+                <img
+                  class="h-48 w-full object-cover"
+                  src="Image/6.JPG"
+                  alt="Bonnie image"
+                />
+                <h5
+                  class="mb-1 text-xl font-medium text-gray-900 dark:text-white"
+                >
+                  Summer Series
+                </h5>
+                <span class="text-sm text-gray-500 dark:text-gray-400"
+                  >T-Shirt</span
+                >
+                <div class="flex w-full px-4 text-center mt-4 md:mt-6">
+                  <a
+                    href="#"
+                    class="py-2 px-4 text-sm font-medium bg-black text-white w-full rounded-md"
+                    >Buy Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div
+        class="p-4 md:p-8 mt-8 bg-black text-white mx-auto grid md:grid-cols-4 gap-4"
+      >
+        <div class="address">
+          <h1 class="text-2xl font-bold mb-2">Market</h1>
+          <div class="jalan flex gap-2">
+            <p class="font-light text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              ut. Dolores nisi quos deserunt amet veniam dolore blanditiis
+              temporibus dignissimos?
+            </p>
+          </div>
+        </div>
+        <div class="payment">
+          <h1 class="text-2xl font-bold mb-4">Pembayaran</h1>
+          <div class="atm flex md:flex-col gap-2">
+            <ul class="flex flex-col gap-3 font-light text-sm">
+              <li>
+                <a class="hover:text-gray-500" href=""
+                  >Bank Negara IndonesiaI</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-gray-500" href=""
+                  >Bank Republik Indonesia</a
+                >
+              </li>
+              <li><a class="hover:text-gray-500" href="">Mandiri</a></li>
+              <li><a class="hover:text-gray-500" href="">Dana</a></li>
+              <li><a class="hover:text-gray-500" href="">Go-pay</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="kirim">
+          <h1 class="text-2xl font-bold mb-4">Category</h1>
+          <div class="atm flex md:flex-col gap-2">
+            <ul class="flex flex-col gap-3 font-light text-sm">
+              <li><a class="hover:text-gray-500" href="">Accesoris</a></li>
+              <li><a class="hover:text-gray-500" href="">Fashion</a></li>
+              <li><a class="hover:text-gray-500" href="">Muslim Wear</a></li>
+              <li><a class="hover:text-gray-500" href="">Male</a></li>
+              <li><a class="hover:text-gray-500" href="">Female</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tanya">
+          <h1 class="text-2xl font-bold mb-4">Ask Anything</h1>
+          <input
+            type="text"
+            class="w-full text-black rounded-lg bg-white focus:ring-0 mb-2"
+          />
+          <button
+            class="text-black bg-white text-sm font-light w-full px-4 py-3 text-center rounded-md"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+      <div class="copyright mb-4">
+        <hr class="mb-4" />
+        <p class="text-center text-xs text-gray-400">
+          © Copryright by : Marketplace
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
