@@ -2844,6 +2844,14 @@ input:checked + .toggle-bg {
   background-image: url('./../image/shoes.jpg');
 }
 
+.bg-\[url\(\'\.\.\/image\/jam\.jpg\'\)\] {
+  background-image: url('../image/jam.jpg');
+}
+
+.bg-\[url\(\'\.\.\/image\/shoes\.jpg\'\)\] {
+  background-image: url('../image/shoes.jpg');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
