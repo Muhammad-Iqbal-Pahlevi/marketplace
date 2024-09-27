@@ -2836,14 +2836,6 @@ input:checked + .toggle-bg {
   background-color: rgb(250 202 21 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/\.\.\/image\/jam\.jpg\'\)\] {
-  background-image: url('./../image/jam.jpg');
-}
-
-.bg-\[url\(\'\.\/\.\.\/image\/shoes\.jpg\'\)\] {
-  background-image: url('./../image/shoes.jpg');
-}
-
 .bg-\[url\(\'\.\.\/image\/jam\.jpg\'\)\] {
   background-image: url('../image/jam.jpg');
 }
