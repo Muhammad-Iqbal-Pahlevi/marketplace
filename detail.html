@@ -18,22 +18,24 @@
         class="relative bg-white shadow-md rounded-lg overflow-hidden flex flex-col md:flex-row"
       >
         <button
-          class="absolute top-3 right-3 bg-gray-300 rounded-full p-2 focus:outline-none hover:bg-gray-400 transition"
+          class="keluar absolute top-3 right-3 bg-gray-300 rounded-full p-2 focus:outline-none hover:bg-gray-400 transition"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-gray-700"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
+          <a href="index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-gray-700"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </a>
         </button>
 
         <div class="md:w-1/2 bg-gray-100 flex justify-center items-center">
@@ -129,7 +131,7 @@
           voluptatem dicta perspiciatis et porro voluptate aut non. Minima,
           architecto reiciendis.
         </p>
-        <ul class="text-gray-600 text-sm list-decimal">
+        <ul class="text-gray-600 p-4 mb-4 text-sm list-disc">
           <li>Bahan Awet</li>
           <li>Nyaman</li>
           <li>Sport</li>
@@ -485,5 +487,12 @@
         </p>
       </div>
     </footer>
+
+    <script src="">
+      const close = document.querySelector(".keluar");
+      close.addEventListener("click", function () {
+        window.location.href = "index.html";
+      });
+    </script>
   </body>
 </html>

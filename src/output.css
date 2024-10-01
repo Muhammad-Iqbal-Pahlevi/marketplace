@@ -1869,8 +1869,8 @@ input:checked + .toggle-bg {
   list-style-position: outside;
 }
 
-.list-decimal {
-  list-style-type: decimal;
+.list-disc {
+  list-style-type: disc;
 }
 
 .list-none {
@@ -2842,6 +2842,14 @@ input:checked + .toggle-bg {
 
 .bg-\[url\(\'\.\.\/image\/shoes\.jpg\'\)\] {
   background-image: url('../image/shoes.jpg');
+}
+
+.bg-\[url\(\'\.\/\.\.\/image\/jam\.jpg\'\)\] {
+  background-image: url('./../image/jam.jpg');
+}
+
+.bg-\[url\(\'\.\/\.\.\/image\/shoes\.jpg\'\)\] {
+  background-image: url('./../image/shoes.jpg');
 }
 
 .decoration-slice {
